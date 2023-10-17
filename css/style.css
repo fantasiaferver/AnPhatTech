@@ -78,3 +78,10 @@ body {
 h4 {
     text-shadow: #000 2px 2px 5px, #fff 0 0 5px;
 }
+
+#back-to-top {
+    position: fixed;
+    left: 20px;
+    bottom: 20px;
+    z-index: 9999;
+}
