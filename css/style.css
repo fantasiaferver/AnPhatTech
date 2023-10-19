@@ -90,3 +90,22 @@ h4 {
     background-color: #000000;
     opacity: 0.6;
 }
+
+.contain-ico {
+    width: 200px;
+    height: 200px;
+    background-color: #2234ae;
+    background-image: linear-gradient(315deg, #2234ae 0%, #191714 74%);
+    /* background-color: #000000; */
+    opacity: 0.6;
+    border-radius: 50%;
+}
+
+.contain-ico i {
+    font-size: 55px;
+}
+
+iframe {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+
+}
