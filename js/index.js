@@ -1,9 +1,9 @@
-ScrollReveal().reveal(".card", { reset: true, delay: 200, easing: "ease-out", interval: 200, scale: 1.1 })
+ScrollReveal().reveal(".card", { reset: false, delay: 200, easing: "ease-out", interval: 200, scale: 1.1 })
 ScrollReveal({ distance: '60px' });
-ScrollReveal().reveal(".to-scale", { reset: true, delay: 200, easing: "ease-out", interval: 200, scale: 1.1 })
-ScrollReveal().reveal('.to-left-item', { origin: 'left', reset: true, delay: 100, easing: "ease-out", interval: 100 });
-ScrollReveal().reveal('.to-right-item', { origin: 'right', reset: true, delay: 100, easing: "ease-out", interval: 100 });
-ScrollReveal().reveal('.to-top-item', { origin: 'top', reset: true, delay: 100, easing: "ease-out", interval: 100 });
+ScrollReveal().reveal(".to-scale", { reset: false, delay: 200, easing: "ease-out", interval: 200, scale: 1.1 })
+ScrollReveal().reveal('.to-left-item', { origin: 'left', reset: false, delay: 100, easing: "ease-out", interval: 100 });
+ScrollReveal().reveal('.to-right-item', { origin: 'right', reset: false, delay: 100, easing: "ease-out", interval: 100 });
+ScrollReveal().reveal('.to-top-item', { origin: 'top', reset: false, delay: 100, easing: "ease-out", interval: 100 });
 
 const backToTopButton = document.getElementById("back-to-top");
 
