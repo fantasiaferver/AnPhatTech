@@ -1,4 +1,4 @@
-ScrollReveal().reveal(".card", { reset: false, delay: 300, easing: "ease-out", interval: 200, scale: 1.1 })
+ScrollReveal().reveal(".card", { reset: false, delay: 300, easing: "ease-out", interval: 200, scale: 1.03 })
 ScrollReveal({ distance: '60px' });
 ScrollReveal().reveal(".to-scale", { reset: false, delay: 300, easing: "ease-out", interval: 200, scale: 1.1 })
 ScrollReveal().reveal('.to-left-item', { origin: 'left', reset: false, delay: 300, easing: "ease-out", interval: 100 });
