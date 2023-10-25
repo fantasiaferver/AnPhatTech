@@ -1,5 +1,6 @@
 // ScrollReveal().reveal(".card", { reset: false, delay: 300, easing: "ease-out", interval: 200, scale: 1.03 })
 ScrollReveal({ distance: '60px' });
+ScrollReveal().reveal(".to-easeout-item", { easing: "ease-out", interval: 50, delay: 100 })
 ScrollReveal().reveal(".to-scale", { reset: false, delay: 300, easing: "ease-out", interval: 200, scale: 1.1 })
 ScrollReveal().reveal('.to-left-item', { origin: 'left', reset: false, delay: 300, easing: "ease-out", interval: 100 });
 ScrollReveal().reveal('.to-right-item', { origin: 'right', reset: false, delay: 300, easing: "ease-out", interval: 100 });
@@ -126,37 +127,4 @@ for (const card of cards) {
         scale: 1.05,
     });
 }
-
-//Hợp đồng công ty
-// const projects = [
-//     {
-//         id: 1,
-//         title: "Mở rộng hạ tầng truy nhập mạng cố định băng rộng năm 2019 tại Thành phố Hồ Chí Minh",
-//         customer: "Tổng Công Ty Mạng Lưới Viettel – CN Tập Đoàn Công Nghiệp – Viễn Thông Quân Đội",
-//         date: "10/01/2020",
-//         amount: 4276141641,
-//     },
-//     {
-//         id: 2,
-//         title: "Xây dựng mở rộng hạ tầng cố định băng rộng năm 2021 tại Đồng Tháp",
-//         customer: "Tổng Công Ty Mạng Lưới Viettel – CN Tập Đoàn Công Nghiệp – Viễn Thông Quân Đội",
-//         date: "20/11/2019",
-//         amount: 14695083583,
-//     },
-//     {
-//         id: 3,
-//         title: "Xây dựng mở rộng hạ tầng cố định băng rộng năm 2021 tại Đồng Tháp",
-//         customer: "Tổng Công Ty Mạng Lưới Viettel – CN Tập Đoàn Công Nghiệp – Viễn Thông Quân Đội",
-//         date: "24/05/2021",
-//         amount: 4276141641,
-//     },
-//     {
-//         id: 4,
-//         title: "Mở rộng hạ tầng truy nhập mạng cố định băng rộng năm 2020 tại Đồng Nai",
-//         customer: "Tổng Công Ty Mạng Lưới Viettel – CN Tập Đoàn Công Nghiệp – Viễn Thông Quân Đội",
-//         date: "27/04/2020",
-//         amount: 3233839617,
-//     },
-// ];
-
 
