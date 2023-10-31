@@ -63,7 +63,7 @@ const cards = [
 const cardsList = document.querySelector('.list-cards');
 for (const card of cards) {
     const cardElement = document.createElement('div');
-    cardElement.classList.add('card', 'p-0', 'my-3');
+    cardElement.classList.add('card', 'p-0', 'my-3',);
     cardElement.style.width = '18rem';
 
     const cardImage = document.createElement('img');
@@ -89,7 +89,7 @@ for (const card of cards) {
         delay: 300,
         easing: "ease-out",
         interval: 200,
-        scale: 1.05,
+        scale: 1.1
     });
 }
 
