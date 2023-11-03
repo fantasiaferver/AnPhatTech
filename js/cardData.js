@@ -63,8 +63,14 @@ const cards = [
 const cardsList = document.querySelector('.list-cards');
 for (const card of cards) {
     const cardElement = document.createElement('div');
-    cardElement.classList.add('card', 'p-0', 'my-3',);
+    cardElement.classList.add('card', 'p-0', 'my-3');
     cardElement.style.width = '18rem';
+    cardElement.style.background = "rgba(255, 255, 255, 0.08)";
+    cardElement.style.borderRadius = "16px";
+    cardElement.style.boxShadow = "rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px";
+    cardElement.style.backdropFilter = "blur(4.5px)";
+    cardElement.style.webkitBackdropFilter = "blur(4.5px)";
+    cardElement.style.border = "1px solid rgba(255, 255, 255, 0.28)";
 
     const cardImage = document.createElement('img');
     cardImage.src = card.image;
@@ -91,5 +97,18 @@ for (const card of cards) {
         interval: 200,
         scale: 1.1
     });
+
+    cardElement.addEventListener("mouseenter", function() {
+        // Áp dụng hiệu ứng zoom
+        cardElement.style.transform = "scale(1.03)";
+        cardElement.style.transition = "transform 0.5s ease";
+      });
+    
+      // Xử lý sự kiện mouseleave
+      cardElement.addEventListener("mouseleave", function() {
+        // Hủy hiệu ứng zoom
+        cardElement.style.transform = "scale(1)";
+        cardElement.style.transition = "transform 0.5s ease";
+      });
 }
 
