@@ -16,7 +16,7 @@
   left: 0;
   pointer-events: none;
   background-color: #0cbaba;
-  background: linear-gradient(0deg, #380036, transparent);
+  background: linear-gradient(0deg, #1e3b70, transparent);
   opacity: 0;
   z-index: 4;
   transition: 0.2s all ease;
