@@ -1,4 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
 * {
+  font-family: "Roboto Condensed", sans-serif;
   color: white;
   margin: 0;
   padding: 0;
@@ -295,4 +297,8 @@ iframe {
 #card-location,
 #card-phone {
   cursor: pointer;
+}
+
+#gioi-thieu p {
+  font-size: 18px;
 }
