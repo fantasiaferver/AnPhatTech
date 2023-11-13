@@ -1,0 +1,7 @@
+#modalContent img {
+  width: 100%;
+}
+#modalContent p,
+strong {
+  color: black;
+}

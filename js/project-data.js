@@ -55,9 +55,25 @@ $.each(data, function(index, value) {
     var card_body = $("<div>").addClass("card-body");
     var title = $("<h5>").addClass("card-title").text(value.ten_hop_dong);
     var text = $("<p>").addClass("card-text").text(value.gia_tri + " USD");
-    var button = $("<a>").addClass("btn btn-primary").attr("href", "#").attr("data-bs-toggle", "modal").attr("data-bs-target", "#exampleModal").text("Chi tiết");
+    var button = $("<a>").addClass("btn btn-primary btn-detail")
+                        .attr("href", "#")
+                        .attr("data-bs-toggle", "modal")
+                        .attr("data-bs-target", "#exampleModal")
+                        .data("hopdong", value) // Lưu dữ liệu hợp đồng vào thuộc tính data
+                        .text("Chi tiết");
+
     card_body.append(title).append(text).append(button);
     card.append(img).append(card_body);
     $("#contain-list-card-project").append(card);
+});
+
+// Thêm sự kiện click cho nút "Chi tiết"
+$(".btn-detail").on("click", function() {
+    var hopdong = $(this).data("hopdong"); // Lấy dữ liệu hợp đồng từ thuộc tính data
+    // Hiển thị dữ liệu trong modal
+    $("#modalContent").html("<p><strong>Tên hợp đồng:</strong> " + hopdong.ten_hop_dong + "</p>" +
+                            "<p><strong>Giá trị:</strong> " + hopdong.gia_tri + " USD</p>" +
+                            "<p><strong>Mô tả:</strong> " + hopdong.mo_ta + "</p>" +
+                            "<img src='" + hopdong.link_hinh_anh + "' alt='Hình ảnh hợp đồng'>");
 });
 
