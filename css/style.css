@@ -1,15 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
 * {
   font-family: "Roboto Condensed", sans-serif;
-  color: white;
+  color: black;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
 body {
-  background-color: #29539b;
-  background-image: linear-gradient(315deg, #29539b 0%, #1e3b70 74%);
+  background-color: white;
+  /* background-color: #29539b;
+  background-image: linear-gradient(315deg, #29539b 0%, #1e3b70 74%); */
 }
 
 .osition-fixed {
@@ -132,22 +133,11 @@ h4 {
   z-index: 9999;
 }
 
-.row-opacity {
-  background-color: #000000;
-  opacity: 0.6;
-}
-
 .contain-ico {
   width: 200px;
   height: 200px;
-  background-color: #2234ae;
-  background-image: linear-gradient(315deg, #2234ae 0%, #191714 74%);
-  /* background-color: #000000; */
-  opacity: 0.6;
+  background-color: #001b79;
   border-radius: 50%;
-}
-
-.contain-ico i {
   font-size: 55px;
 }
 
@@ -157,7 +147,6 @@ iframe {
 
 .glass-card {
   transition: ease-in-out 0.2s;
-
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -184,6 +173,18 @@ iframe {
 
 #footer {
   padding: 0 30px;
+}
+
+#footer h1 {
+  color: white;
+}
+
+#footer p {
+  color: white;
+}
+
+#footer i {
+  color: white;
 }
 
 .card-contact {
@@ -301,4 +302,8 @@ iframe {
 
 #gioi-thieu p {
   font-size: 18px;
+}
+
+.card-contact i {
+  color: white;
 }
