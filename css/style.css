@@ -33,10 +33,11 @@ body {
 }
 
 #img-intro {
-  /* border-radius: 20px; */
+  border-radius: 20px;
   /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); */
   transform: scale(1);
   transition: transform 0.5s ease-in-out;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
 #img-intro:hover {
@@ -44,10 +45,6 @@ body {
 }
 
 @media (max-width: 769px) {
-  /* .card-contact {
-    width: 300px;
-  } */
-
   .glass-card {
     margin: 10px 0;
   }
@@ -63,6 +60,10 @@ body {
     display: flex;
     flex-direction: column !important;
     align-items: center !important;
+  }
+
+  .pad {
+    height: 7rem;
   }
 
   #footer {
@@ -81,6 +82,10 @@ body {
 }
 
 @media (max-width: 426px) {
+  .pad {
+    height: 7rem;
+  }
+
   .contain-icon {
     display: none;
   }
@@ -288,8 +293,8 @@ iframe {
   padding: 15px;
 }
 
-#gioi-thieu p {
-  font-size: 17px;
+p {
+  font-size: 18px;
 }
 
 #customer-contact-card,
@@ -300,10 +305,22 @@ iframe {
   cursor: pointer;
 }
 
-#gioi-thieu p {
-  font-size: 18px;
-}
-
 .card-contact i {
   color: white;
+}
+
+.carousel-caption h5 {
+  letter-spacing: 6px;
+  font-size: 40px;
+  font-weight: bold;
+  text-shadow: 0px 5px 5px #000;
+}
+
+.carousel-caption p {
+  color: white;
+  font-size: 19px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-weight: 500;
+  text-shadow: 0px 5px 5px #000;
 }
